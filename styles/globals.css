@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  background-color: #263348;
+  /* // We've turned scrollbar off for desktop too */
+  /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded bg-[#263348] dark:bg-indigo-300;
+}
+
+.slider-thumb::-webkit-slider-thumb {
+  @apply h-5 w-5 cursor-pointer appearance-none rounded-full bg-emerald-300;
+}
+
+.slider-thumb-red::-webkit-slider-thumb {
+  @apply h-5 w-5 cursor-pointer appearance-none rounded-full bg-[#ed6856];
+}
+
+.slider-thumb::-webkit-slider-thumb:hover {
+  @apply bg-emerald-200;
+}
+
+/* @media (max-width: 768px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+} */
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

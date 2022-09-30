@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "useUnknownInCatchVariables": false,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./components/*", "./components"],
+      "@containers/*": ["./containers/*", "./containers"],
+      "@context/*": ["./context/*", "./context"],
+      "@types/*": ["./types/*", "./types"],
+      "@utils/*": ["./utils/*", "./utils"],
+      "@assets/*": ["./public/*", "./public"],
+      "@styles/*": ["./styles/*", "./styles"],
+      "@store/*": ["./store/*", "./store"]
+    },
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/auth/[...nextauth].js"],
+  "exclude": ["node_modules"]
+}
